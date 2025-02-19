@@ -24,7 +24,6 @@ export async function connectToDatabase() {
     }
 
     try {cached.conn = await cached.promise;} 
-    catch (error) {cached.promise = null;throw new Error(`Error in DB File 
-        ${error}`); }
+    catch (error) {cached.promise = null;throw new Error(`Error in DB File ${error}`); }
     return cached.conn;
 }
