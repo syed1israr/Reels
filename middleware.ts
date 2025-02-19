@@ -11,7 +11,7 @@ export default withAuth(
         const { pathname } = req.nextUrl;
         if (
           pathname.startsWith("/api/auth") ||
-          pathname === "/login" ||
+          pathname === "/signin" ||
           pathname === "/register"
         ) {
           return true;
